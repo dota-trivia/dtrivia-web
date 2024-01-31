@@ -1,0 +1,2 @@
+npx devmoji -e --lint
+npx --no -- commitlint --edit ${1}
