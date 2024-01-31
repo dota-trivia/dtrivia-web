@@ -1,13 +1,17 @@
 <script>
-	import { signIn, signOut } from '@auth/sveltekit/client'
-	import { page } from '$app/stores'
 	import { t } from '$lib/translations'
+	import { page } from '$app/stores'
+	import { toast } from 'svelte-sonner'
+	import { Button } from '$lib/components/ui/button'
+	import { signIn, signOut } from '@auth/sveltekit/client'
 </script>
 
 <h1>SvelteKit Auth Example</h1>
-<p>
+
+<Button on:click={() => toast('nice')}>
 	Hello {$t('common.hello')}
-</p>
+</Button>
+
 <p>
 	{#if $page.data.session}
 		{#if $page.data.session.user?.image}
