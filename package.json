@@ -47,6 +47,7 @@
     "bits-ui": "^0.16.0",
     "clsx": "^2.1.0",
     "radix-icons-svelte": "^1.2.1",
+    "sveltekit-i18n": "^2.4.2",
     "tailwind-merge": "^2.2.1",
     "tailwind-variants": "^0.1.20"
   }
